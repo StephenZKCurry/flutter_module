@@ -3,7 +3,12 @@
 //
 
 #import "GeneratedPluginRegistrant.h"
+
+#if __has_include(<fluttertoast/FluttertoastPlugin.h>)
 #import <fluttertoast/FluttertoastPlugin.h>
+#else
+@import fluttertoast;
+#endif
 
 @implementation GeneratedPluginRegistrant
 
